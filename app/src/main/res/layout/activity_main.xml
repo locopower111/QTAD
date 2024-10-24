@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
-    <TextView
+    <!-- Imagen superior (simulando la pantalla de código) -->
+
+    <!-- Representación de manos programando (puede ser una imagen) -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="653dp"
+        android:layout_height="542dp"
+        app:srcCompat="@drawable/imagen_qta" />
+
+    <!-- Botón de Iniciar Sesión -->
+    <Button
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#5AE4A8"
+        android:text="Iniciar sesión"
+        android:textColor="@android:color/white" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
